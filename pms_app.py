@@ -144,6 +144,16 @@ def price_prediction(Operation_Time,
 
 # Streamlit Part
 st.set_page_config(layout= "wide")
+
+def setting_bg():
+    st.markdown(f""" <style>.stApp {{
+                        background:url("https://t3.ftcdn.net/jpg/06/54/92/60/240_F_654926042_OFgg2UoFkDn09TQeEXzpVlWqCSyd0fWd.jpg");
+                        background-size: cover}}
+                     </style>""", unsafe_allow_html=True)
+
+
+setting_bg()
+
 st.title("PREDICTIVE MAINTENANCE SYSTEM")
 with st.sidebar:
     select = option_menu("Main Menu",["Predictive Maintenance", "Prediction", "About"])
